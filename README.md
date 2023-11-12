@@ -1,55 +1,70 @@
-Project API Development | Emin Dudayev - README
+**Project API Development | Emin Dudayev - README**
 
 Algemene Informatie
-Dit project bevat een API die reviews behandelt.
+Dit project bevat een API die reviews behandelt voor de nieuwe iPhone 15.
 
-GitHub Repository
+**GitHub Repository**
 https://github.com/skemil/Project-API-Development
 
-API Documentatie
-Beschrijving
-Dit project is gericht op het maken van users, inloggen met OAuth2, Creeren en verwijderen van reviews. De API biedt functionaliteiten zoals:
+**Beschrijving**
+De thema is gaat rond de nieuwe iPhone 15. Hoewel ik op de Front-End de reviews kan weergeven, had ik nog graag reviews willen maken via de front-end maar dat zal voor een andere keertje zijn! Ook had ik graag de ratings (Hartjes/Sterren) onder de review gekregen maar ook dat zal voor een andere keertje zijn). 
 
-[Beschrijf enkele functies van je API]
-Documentatie
-[Link naar de gehoste API op GitHub]
-API Werking
-[Inclusief screenshots van Postman-requests om de functionaliteit te illustreren]
-OpenAPI Documentatie
-[Inclusief screenshot(s) van de volledige OpenAPI-documentatie]
-REST API
+Dit project is gericht op het maken van users, inloggen met OAuth2, Creeren en verwijderen van reviews.
+
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/628fc91a-7146-4d75-b2ef-9b5ab829d21e)
+
+
+**Okteto**
+https://useritem-api-service-skemil.cloud.okteto.net/
+
+
+**REST API**
 Endpoints
-GET Endpoints:
 
-[Endpoint 1]
-[Endpoint 2]
-POST Endpoint:
+**GET Endpoints:**
 
-[Endpoint]
-DELETE Endpoint:
+1. Read Users
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/f067e1fe-6e76-458a-80fd-ecc2bc8db8f3)
+Als je niet ingelogt bent:
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/f03a6db7-866d-4da7-acc9-72fec9f2f679)
 
-[Endpoint]
-Validaties en Response Models
-[Beschrijf het gebruik van validaties en response-modellen]
-Logisch Gebruik van Parameters
-[Beschrijf hoe path parameters, query parameters en de request body logisch worden gebruikt]
-Database
-[Gebruik van SQLite als database voor persistentie]
-Deployment
-Docker Container
-[Inclusief beschrijving van de Docker-container en hoe deze automatisch wordt opgebouwd door GitHub Actions]
-Deployment op Okteto Cloud
-[Inclusief beschrijving van de deployment van de API-container op Okteto Cloud via Docker Compose]
-Bijkomende Componenten (Extra Punten)
-Simpele Front-end:
+2. Read User
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/7259c7fe-0830-409e-90e9-05c565989b22)
 
-[Beschrijf hier als je een simpele front-end hebt ontwikkeld voor je API]
-Gebruik van Andere Database:
+3. Read Reviews
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/c3522b26-f5d6-434f-9890-e2048efebf45)
 
-[Beschrijf hier als je een andere database dan SQLite hebt gebruikt]
-Security Features:
 
-[Beschrijf hier de beveiligingsfuncties die zijn geïmplementeerd]
-Eigen Inspiratie:
+**POST Endpoint:**
 
-[Inclusief eventuele extra functionaliteiten die je hebt toegevoegd]
+1. Create User
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/b2010b2f-e2e8-4ac6-8b7e-90fceb27063a)
+
+2. Create Review For User
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/fad9f4c2-a372-46aa-bb18-ff48e7eb59ab)
+
+3. Token Creation
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/fe14c0a0-07b2-45f6-9c81-f517cdc7c641)
+
+
+**DELETE Endpoint:**
+
+1. Delete Review
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/5ee7551e-3315-413b-ad8d-6ce8f0bee079)
+
+
+**Validaties en Response Models**
+
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/fcf3ec7f-beb2-42d4-aa74-e968f4f0e5c1)
+
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/cf02f798-e360-4168-bf60-de03a05885a0)
+
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/28ce61e2-dc7d-4df6-a313-a99d10686b69)
+
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/86849ee9-73f7-459d-85c2-40f97fd676b7)
+
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/c7c1ec20-7e3c-40bf-b4ea-ad4b46f03d1f)
+
+
+
+
