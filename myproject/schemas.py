@@ -12,6 +12,7 @@ class Review(ItemBase):
     id: int
     owner_id: int
 
+
     class Config:
         orm_mode = True
 
