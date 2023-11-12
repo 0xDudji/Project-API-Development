@@ -21,7 +21,7 @@ def get_reviews(db: Session, skip: int = 0, limit: int = 100):
 
 def create_user(db: Session, user: schemas.UserCreate):
     hashed_password = auth.get_password_hash(user.password)
-    db_user = models.User(email=user.email, hashed_password=hashed_password)
+    db_user = models.User(email=user.email,name=user.name,hashed_password=hashed_password)
     db.add(db_user)
     db.commit()
     db.refresh(db_user)

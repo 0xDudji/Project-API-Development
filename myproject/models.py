@@ -21,5 +21,5 @@ class Review(Base):
     stars = Column(Integer, index=True)
     description = Column(String, index=True)
     owner_id = Column(Integer, ForeignKey("users.id"))
-    name = Column(String)
+    name = Column(String, ForeignKey("users.name"))
     owner = relationship("User", back_populates="reviews")
