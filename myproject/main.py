@@ -73,7 +73,7 @@ def create_review_for_user(
     return crud.create_user_review(db=db, review=review, user_id=user_id)
 
 
-@app.get("/Reviews/", response_model=list[schemas.Review])
+@app.get("/reviews/", response_model=list[schemas.Review])
 def read_reviews(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     reviews = crud.get_reviews(db, skip=skip, limit=limit)
     return reviews

@@ -11,7 +11,6 @@ class ReviewCreate(ItemBase):
 class Review(ItemBase):
     id: int
     owner_id: int
-    stars: int
 
     class Config:
         orm_mode = True
