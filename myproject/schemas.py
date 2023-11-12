@@ -5,10 +5,10 @@ class ItemBase(BaseModel):
     title: str
     description: str | None = None
 
-class ItemCreate(ItemBase):
+class ReviewCreate(ItemBase):
     pass
 
-class Item(ItemBase):
+class Review(ItemBase):
     id: int
     owner_id: int
 
@@ -26,7 +26,7 @@ class UserCreate(UserBase):
 class User(UserBase):
     id: int
     is_active: bool
-    items: list[Item] = []
+    Reviews: list[Review] = []
 
     class Config:
         orm_mode = True
