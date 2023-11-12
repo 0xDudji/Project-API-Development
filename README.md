@@ -28,32 +28,41 @@ Endpoints
 **GET Endpoints:**
 
 1. Read Users
+
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/f067e1fe-6e76-458a-80fd-ecc2bc8db8f3)
+
 Als je niet ingelogt bent:
+
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/f03a6db7-866d-4da7-acc9-72fec9f2f679)
 
 2. Read User
+
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/7259c7fe-0830-409e-90e9-05c565989b22)
 
 3. Read Reviews
+   
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/c3522b26-f5d6-434f-9890-e2048efebf45)
 
 
 **POST Endpoint:**
 
 1. Create User
+ 
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/b2010b2f-e2e8-4ac6-8b7e-90fceb27063a)
 
 2. Create Review For User
+
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/fad9f4c2-a372-46aa-bb18-ff48e7eb59ab)
 
 3. Token Creation
+
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/fe14c0a0-07b2-45f6-9c81-f517cdc7c641)
 
 
 **DELETE Endpoint:**
 
 1. Delete Review
+   
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/5ee7551e-3315-413b-ad8d-6ce8f0bee079)
 
 
