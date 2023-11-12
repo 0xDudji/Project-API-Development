@@ -3,9 +3,9 @@ from pydantic import BaseModel, Field
 
 class ItemBase(BaseModel):
     description: str | None = None
+    stars: int = Field(ge=1, le=10)
 
 class ReviewCreate(ItemBase):
-    # stars: int = Field(ge=1, le=10)
     pass
 
 class Review(ItemBase):
