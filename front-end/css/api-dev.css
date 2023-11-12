@@ -91,6 +91,7 @@
   text-align: center;
   justify-content: flex-start;
   padding-bottom: 0;
+  display: none;
 }
 
 .name {
@@ -347,6 +348,7 @@
   margin-bottom: 10px;
   font-family: Montserrat, sans-serif;
   font-size: 50px;
+  line-height: 60px;
 }
 
 .steps-right {
@@ -684,3 +686,5 @@
     margin-right: 0;
   }
 }
+
+
