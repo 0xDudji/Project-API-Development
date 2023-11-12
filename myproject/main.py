@@ -50,6 +50,7 @@ def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
         raise HTTPException(status_code=400, detail="Email already registered")
     return crud.create_user(db=db, user=user)
 
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 @app.get("/users/", response_model=list[schemas.User])
 def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db), token: str = Depends(oauth2_scheme)):
@@ -77,7 +78,6 @@ def read_reviews(skip: int = 0, limit: int = 100, db: Session = Depends(get_db))
     reviews = crud.get_reviews(db, skip=skip, limit=limit)
     return reviews
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 @app.post("/token")
 def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
