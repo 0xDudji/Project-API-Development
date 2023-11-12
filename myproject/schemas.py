@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, EmailStr
 
 
 class ItemBase(BaseModel):
@@ -16,9 +16,9 @@ class Review(ItemBase):
         orm_mode = True
 
 
-
 class UserBase(BaseModel):
-    email: str
+    email: EmailStr
+    name: str
 
 class UserCreate(UserBase):
     password: str
