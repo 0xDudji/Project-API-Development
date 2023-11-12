@@ -1,0 +1,154 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Sun Nov 12 2023 22:08:01 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6551002a94c9655c7d1a0ead" data-wf-site="6551002a94c9655c7d1a0ea8">
+<head>
+  <meta charset="utf-8">
+  <title>API Dev</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/api-dev.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body class="body">
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="container w-container">
+      <a data-w-id="9aff779b-75b1-dca7-dcbb-c9fc0fe11998" href="https://thomasmore.be/nl" target="_blank" class="link-block-2 w-inline-block"><img src="images/download-1.png" loading="lazy" width="40" alt="" class="image-47"></a>
+      <nav role="navigation" class="w-nav-menu">
+        <a href="https://github.com/skemil" target="_blank" class="nav-link w-nav-link">Github</a>
+        <a href="https://useritem-api-service-skemil.cloud.okteto.net/docs" target="_blank" class="nav-link-2 nav-link w-nav-link">Docs</a>
+        <a href="https://github.com/skemil/Project-API-Development/" target="_blank" class="nav-link-3 nav-link w-nav-link">Repo</a>
+      </nav>
+      <div class="w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="w-layout-blockcontainer w-container">
+      <div class="review-model">
+        <div class="header">
+          <div data-w-id="da7f0ec3-cf44-a55a-47cc-ca8518460726" style="opacity:0" class="heading_interaction-wrap">
+            <h1 style="-webkit-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;filter:blur(6px)" class="heading-move _1">I</h1>
+            <h1 style="-webkit-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);filter:blur(6px);opacity:0" class="heading-move _2">P</h1>
+            <h1 style="-webkit-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;filter:blur(6px)" class="heading-move _3">H</h1>
+            <h1 style="-webkit-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);filter:blur(6px);opacity:0" class="heading-move _4">O</h1>
+            <h1 style="-webkit-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;filter:blur(6px)" class="heading-move _5">N</h1>
+            <h1 style="-webkit-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);filter:blur(6px);opacity:0" class="heading-move _6">E</h1>
+            <h1 style="-webkit-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-160px, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;filter:blur(6px)" class="heading-move _7">1</h1>
+            <h1 style="-webkit-transform:translate3d(-160%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-160%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-160%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-160%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;filter:blur(6px)" class="heading-move _8">5</h1>
+          </div>
+          <div class="div-block-2">
+            <div class="text-block">The innovative new design stands out because of the rear glass that is colored throughout. </div>
+            <div class="div-block"></div>
+          </div>
+          <a href="#reviews" class="link-block w-inline-block">
+            <div data-w-id="e41cd005-7d9a-ec81-36cd-c28cfa70c7d8" style="opacity:0" class="button-5">
+              <div class="button_bg">
+                <div class="label">Read reviews</div>
+              </div>
+              <div class="button_color-wrap-2 blur">
+                <div style="-webkit-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button_color _1"></div>
+                <div style="-webkit-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button_color _2"></div>
+                <div style="-webkit-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button_color _3"></div>
+                <div style="-webkit-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button_color _4"></div>
+              </div>
+              <div class="button_color-wrap-2">
+                <div style="-webkit-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button_color _1"></div>
+                <div style="-webkit-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button_color _2"></div>
+                <div style="-webkit-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button_color _3"></div>
+                <div style="-webkit-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button_color _4"></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="model">
+          <div class="spline-scene" data-w-id="7f6f06ea-fa42-0f2a-b965-067b9acc7ac5" data-animation-type="spline" data-spline-url="https://prod.spline.design/mfiNjxherR2l3nTL/scene.splinecode"><canvas></canvas></div>
+        </div>
+      </div>
+    </div><img src="images/wave.svg" loading="lazy" alt="" class="image-48"><img src="images/wave.svg" loading="lazy" alt="" class="image-48-copy">
+  </section>
+  <div id="reviews" class="reviews">
+    <div data-w-id="44b36b42-ee75-8044-fc5d-30d97ece13bc" class="steps-cont w-container">
+      <div class="steps-left">
+        <div class="left-content">
+          <div data-w-id="44b36b42-ee75-8044-fc5d-30d97ece13bf" style="opacity:0" class="div-block-17">
+            <h1 class="heading-5">Explore the iPhone 15 Experience</h1>
+            <div class="text-block-7">Discover What Users Love About the Latest iPhone</div>
+          </div>
+          <div class="lottie-animation-copy" data-w-id="44b36b42-ee75-8044-fc5d-30d97ece13c6" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/64c0f0bbeb6b5f7302a730a0/651be806d01f3c5e709e9e94_animation_lna5n242.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="4.004003840917587" data-duration="0"></div>
+        </div>
+      </div>
+      <div data-w-id="44b36b42-ee75-8044-fc5d-30d97ece13c7" style="opacity:0" class="steps-right">
+        <div id="review-container" class="review">
+          <div id="samplestyle" class="sample-review visit__card">
+            <h3 class="name">Review name</h3>
+            <div class="description">Review</div>
+            <div class="div-block-19">
+              <div data-w-id="95fe510a-792a-6e1b-1dff-7e83786829a2" style="opacity:1" class="div-block-18">
+                <h4 class="heading-6">Reveal rating</h4>
+              </div>
+              <div class="div-block-20"><img src="images/system-solid-48-favorite-heart.gif" loading="lazy" width="31" id="gif" alt="" class="gif"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Cards-Container" class="w-layout-grid api-data-goes-here"></div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6551002a94c9655c7d1a0ea8" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script>
+let Okteto = new URL('https://useritem-api-service-skemil.cloud.okteto.net/');
+function getReviews() {
+    let request = new XMLHttpRequest();
+    let url = Okteto.toString() + 'reviews/';
+    request.open('GET', url, true)
+    // When the 'request' or API request loads, do the following...
+    request.onload = function() {
+        // Store what we get back from the Xano API as a variable called 'data' and converts it to a javascript object
+        let data = JSON.parse(this.response)
+        // Status 200 = Success. Status 400 = Problem.  This says if it's successful and no problems, then execute 
+        if (request.status >= 200 && request.status < 400) {
+            // Map a variable called cardContainer to the Webflow element called "Cards-Container"
+            const cardContainer = document.getElementById("review-container")
+            // This is called a For Loop. This goes through each object being passed back from the Xano API and does something.
+            // Specifically, it says "For every element in Data (response from API), call each individual item restaurant"
+            data.forEach(review => {
+                // For each restaurant, create a div called card and style with the "Sample Card" class
+                const style = document.getElementById('samplestyle')
+                // Copy the card and it's style
+                const card = style.cloneNode(true)
+                card.setAttribute('id', '');
+                card.style.display = 'flex';
+                // For each restaurant, Create an image and use the restaurant image coming from the API
+                //const img = card.getElementsByTagName('IMG')[0]
+                //img.src = restaurant.banner.url + "?tpl=big:box"; // using Xano's template engine to re-size the pictures down and make them a box
+                // For each restaurant, create an h3 and set the text content to the restaurant's title
+                const h3 = card.getElementsByTagName('H3')[0]
+                h3.textContent = review.name;
+                // For each restaurant, create an paragraph and set the text content to the restaurant's description
+                const p = card.getElementsByTagName('div')[0]
+                p.textContent = review.description;
+                // Place the card into the div "Cards-Container" 
+                cardContainer.appendChild(card);
+            })
+        }
+    }
+    // Send Restaurant request to API
+    request.send();
+}
+// This fires all of the defined functions when the document is "ready" or loaded
+(function() {
+    getReviews();
+})();
+</script>
+</body>
+</html>
