@@ -27,10 +27,10 @@ def create_user(db: Session, user: schemas.UserCreate):
     db.refresh(db_user)
     return db_user
 
-def create_user_item(db: Session, item: schemas.ItemCreate, user_id: int):
-    db_item = models.Item(**item.dict(), owner_id=user_id)
-    db.add(db_item)
+def create_user_review(db: Session, review: schemas.ReviewCreate, user_id: int):
+    db_review = models.Review(**review.dict(), owner_id=user_id)
+    db.add(db_review)
     db.commit()
-    db.refresh(db_item)
-    return db_item
+    db.refresh(db_review)
+    return db_review
 
