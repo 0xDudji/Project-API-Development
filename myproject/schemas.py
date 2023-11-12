@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class ItemBase(BaseModel):
@@ -6,7 +6,7 @@ class ItemBase(BaseModel):
     description: str | None = None
 
 class ReviewCreate(ItemBase):
-    pass
+    stars: int = Field(ge=1, le=10)
 
 class Review(ItemBase):
     id: int
