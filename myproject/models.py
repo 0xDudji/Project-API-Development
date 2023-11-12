@@ -11,8 +11,8 @@ class User(Base):
     hashed_password = Column(String)
     is_active = Column(Boolean, default=True)
 
-    reviews = relationship("Review", back_populates="owner")
-
+    # Specify the foreign key relationship for the 'reviews' attribute
+    reviews = relationship("Review", back_populates="owner", foreign_keys="[Review.owner_id]")
 
 class Review(Base):
     __tablename__ = "reviews"
@@ -22,4 +22,6 @@ class Review(Base):
     description = Column(String, index=True)
     owner_id = Column(Integer, ForeignKey("users.id"))
     name = Column(String, ForeignKey("users.name"))
-    owner = relationship("User", back_populates="reviews")
+
+    # Specify the foreign key relationship for the 'owner' attribute
+    owner = relationship("User", back_populates="reviews", foreign_keys="[Review.owner_id]")
