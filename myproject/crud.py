@@ -1,7 +1,11 @@
+from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 
+import auth
 import models
 import schemas
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 def get_user(db: Session, user_id: int):
     return db.query(models.User).filter(models.User.id == user_id).first()
