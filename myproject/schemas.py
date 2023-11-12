@@ -5,7 +5,8 @@ class ItemBase(BaseModel):
     description: str | None = None
 
 class ReviewCreate(ItemBase):
-    stars: int = Field(ge=1, le=10)
+    # stars: int = Field(ge=1, le=10)
+    pass
 
 class Review(ItemBase):
     id: int
