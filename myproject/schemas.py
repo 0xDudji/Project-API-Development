@@ -2,7 +2,6 @@ from pydantic import BaseModel, Field
 
 
 class ItemBase(BaseModel):
-    title: str
     description: str | None = None
 
 class ReviewCreate(ItemBase):
