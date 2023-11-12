@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field, EmailStr
 class ItemBase(BaseModel):
     description: str | None = None
     stars: int = Field(ge=1, le=10)
+    name: str
 
 class ReviewCreate(ItemBase):
     pass
