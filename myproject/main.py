@@ -18,12 +18,7 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-origins = [
-    "http://localhost",
-    "http://localhost:8080",
-    "https://localhost.tiangolo.com",
-    "http://127.0.0.1:5500"
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -64,6 +59,10 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
     if db_user is None:
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
+
+@app.delete("/reviews/{review_id}", response_model=bool)
+def delete_review(review_id: int, db: Session = Depends(get_db)):
+    return crud.delete_review(db=db, review_id=review_id)
 
 
 @app.post("/users/{user_id}/reviews/", response_model=schemas.Review)

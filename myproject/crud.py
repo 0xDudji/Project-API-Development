@@ -34,3 +34,10 @@ def create_user_review(db: Session, review: schemas.ReviewCreate, user_id: int):
     db.refresh(db_review)
     return db_review
 
+def delete_review(db: Session, review_id: int):
+    review = db.query(models.Review).filter(models.Review.id == review_id).first()
+    if review:
+        db.delete(review)
+        db.commit()
+        return True
+    return False
