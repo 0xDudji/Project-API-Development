@@ -7,15 +7,19 @@ Dit project bevat een API die reviews behandelt voor de nieuwe iPhone 15.
 https://github.com/skemil/Project-API-Development
 
 **Beschrijving**
-De thema is gaat rond de nieuwe iPhone 15. Hoewel ik op de Front-End de reviews kan weergeven, had ik nog graag reviews willen maken via de front-end maar dat zal voor een andere keertje zijn! Ook had ik graag de ratings (Hartjes/Sterren) onder de review gekregen maar ook dat zal voor een andere keertje zijn). 
 
-Dit project is gericht op het maken van users, inloggen met OAuth2, Creeren en verwijderen van reviews.
+Het thema gaat over de nieuwe iPhone 15. Hoewel ik de reviews op de Front-End kan weergeven, zou ik ook graag de mogelijkheid willen toevoegen om reviews via de Front-End te maken, maar dat zal voor een andere keer zijn! Daarnaast had ik graag de beoordelingen (hartjes/sterren) onder elke review toegevoegd.
+
+Dit project is gericht op het aanmaken van gebruikers, inloggen met OAuth2, en het creëren en verwijderen van reviews.
 
 ![image](https://github.com/skemil/Project-API-Development/assets/71653103/628fc91a-7146-4d75-b2ef-9b5ab829d21e)
 
 
 **Okteto**
 https://useritem-api-service-skemil.cloud.okteto.net/
+
+![image](https://github.com/skemil/Project-API-Development/assets/71653103/32f8e9f2-84b8-40e9-ab57-328e6aa4ac0c)
+
 
 
 **REST API**
